@@ -1,3 +1,125 @@
 {
-  "recipes": []
+  "recipes": [
+    {
+      "name": "Chicken & Rice Casserole",
+      "serves": 4,
+      "tags": [
+        "casserole",
+        "comfort",
+        "meal-prep",
+        "chicken"
+      ],
+      "ingredients": [
+        {
+          "item": "chicken breast",
+          "qty": "500g",
+          "search_term": "chicken breast"
+        },
+        {
+          "item": "rice",
+          "qty": "2 cups",
+          "search_term": "white rice"
+        },
+        {
+          "item": "onion",
+          "qty": "1",
+          "search_term": "brown onion"
+        },
+        {
+          "item": "broccoli",
+          "qty": "1 head",
+          "search_term": "broccoli"
+        },
+        {
+          "item": "cheese",
+          "qty": "200g",
+          "search_term": "tasty cheese"
+        },
+        {
+          "item": "chicken stock",
+          "qty": "1 cube",
+          "search_term": "chicken stock"
+        }
+      ]
+    },
+    {
+      "name": "Garlic Chicken Pasta",
+      "serves": 4,
+      "tags": [
+        "pasta",
+        "quick",
+        "meal-prep",
+        "chicken"
+      ],
+      "ingredients": [
+        {
+          "item": "chicken breast",
+          "qty": "500g",
+          "search_term": "chicken breast"
+        },
+        {
+          "item": "pasta",
+          "qty": "400g",
+          "search_term": "penne pasta"
+        },
+        {
+          "item": "onion",
+          "qty": "1",
+          "search_term": "brown onion"
+        },
+        {
+          "item": "broccoli",
+          "qty": "1 head",
+          "search_term": "broccoli"
+        },
+        {
+          "item": "cream",
+          "qty": "200ml",
+          "search_term": "thickened cream"
+        }
+      ]
+    },
+    {
+      "name": "Chicken & Veg Curry",
+      "serves": 4,
+      "tags": [
+        "curry",
+        "weeknight",
+        "meal-prep",
+        "chicken"
+      ],
+      "ingredients": [
+        {
+          "item": "chicken breast",
+          "qty": "500g",
+          "search_term": "chicken breast"
+        },
+        {
+          "item": "onion",
+          "qty": "1",
+          "search_term": "brown onion"
+        },
+        {
+          "item": "rice",
+          "qty": "2 cups",
+          "search_term": "white rice"
+        },
+        {
+          "item": "carrot",
+          "qty": "2",
+          "search_term": "carrot"
+        },
+        {
+          "item": "coconut milk",
+          "qty": "1 can",
+          "search_term": "coconut milk"
+        },
+        {
+          "item": "curry paste",
+          "qty": "1 jar",
+          "search_term": "curry paste"
+        }
+      ]
+    }
+  ]
 }

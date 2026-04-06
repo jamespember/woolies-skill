@@ -1,6 +1,6 @@
 # woolies-skill
 
-An AI agent skill for searching Woolworths Australia products, optimising shopping lists, and meal planning. Works with any agent that supports the [Agent Skills](https://agentskills.io) pattern (Claude Code, OpenCode, etc).
+An AI agent skill for searching Woolworths Australia products, optimising shopping lists, and meal planning. Works with any agent that supports the [Agent Skills](https://agentskills.io) specification.
 
 ## What it does
 
@@ -8,32 +8,32 @@ An AI agent skill for searching Woolworths Australia products, optimising shoppi
 - Ranks by unit price, highlights specials and half-price items
 - Plans meals by clustering recipes around shared ingredients to reduce cost and waste
 - Saves recipes locally so it learns what you cook over time
+- Generates a mobile-friendly HTML shopping list with checkboxes
 - Generates a browser console snippet to add items to your Woolworths cart
 
 ## Install
 
-Clone into your agent's skill directory. The folder must be named `woolies`.
-
-**Claude Code:**
 ```bash
+npx skills add jamespember/woolies-skill
+```
+
+This works with OpenCode, Claude Code, Codex, Cursor, and [40+ other agents](https://github.com/vercel-labs/skills#supported-agents).
+
+### Manual install
+
+If you prefer, clone directly into your agent's skill directory:
+
+```bash
+# Claude Code
 git clone https://github.com/jamespember/woolies-skill.git ~/.claude/skills/woolies
-```
 
-**OpenCode:**
-```bash
+# OpenCode
 git clone https://github.com/jamespember/woolies-skill.git ~/.config/opencode/skills/woolies
-```
-
-**Other agents:** clone it wherever your agent loads skills from. The agent needs to read `SKILL.md` to know what to do.
-
-Then make the scripts executable:
-```bash
-chmod +x <install-path>/scripts/*.sh
 ```
 
 ## Requirements
 
-- `bash`, `curl`, `python3` (standard on macOS/Linux)
+- `python3` (standard on macOS/Linux)
 - No API keys needed for searching
 - Adding to cart requires being logged into woolworths.com.au in your browser
 
@@ -71,9 +71,10 @@ Recipes you confirm get saved to `recipes.json` so the skill remembers them next
 ## Files
 
 ```
-SKILL.md           # Skill definition the agent reads for instructions
-scripts/search.sh  # Product search via Woolworths API
-scripts/recipes.sh # Recipe library CRUD + ingredient overlap analysis
-scripts/cart.sh    # Generates JS snippet to add items to cart
-recipes.json       # Your saved recipes (starts empty, grows over time)
+SKILL.md                  # Skill definition the agent reads for instructions
+scripts/search.py         # Product search via Woolworths API
+scripts/recipes.py        # Recipe library CRUD + ingredient overlap analysis
+scripts/cart.py           # Generates JS snippet to add items to cart
+scripts/shopping_list.py  # Generates HTML shopping list, opens in browser
+recipes.json              # Your saved recipes (starts empty, grows over time)
 ```
